@@ -346,13 +346,13 @@ MTTR represents four different measurements:
 
 **Resolve** is the most comprehensive—it captures the entire incident lifecycle from first detection through post-incident verification and closure.
 
-**Example scenario:**
+Example scenario:
 
 - 2:00 AM — Outage begins
-- 2:15 AM — Alert fires, on-call acknowledges → **Response time: 10 min**
-- 2:45 AM — Root cause identified, fix deployed → **Repair time: 20 min**
-- 3:00 AM — Service verified working for users → **Recovery time: 30 min**
-- 3:30 AM — Incident ticket closed after verification → **Resolution time: 40 min**
+- 2:15 AM — Alert fires, on-call acknowledges → Response time: 10 min
+- 2:45 AM — Root cause identified, fix deployed → Repair time: 20 min
+- 3:00 AM — Service verified working for users → Recovery time: 30 min
+- 3:30 AM — Incident ticket closed after verification → Resolution time: 40 min
 
 Related metrics:
 
@@ -362,15 +362,15 @@ Related metrics:
 
 ### DORA metrics
 
-[DevOps Research and Assessment (DORA) metrics are industry standard key performance indicators (KPIs) specifically for software engineering devops teams.
+DevOps Research and Assessment (DORA) metrics are industry standard key performance indicators (KPIs) specifically for software engineering devops teams.
 
-- **Change Lead Time** - Time to implement, test, and deliver code for a feature (measured from first commit to deployment). Be specific what you mean by start and finish. For example, some teams like to measure from the start of work ticket to when the work is in a commit and pushed to a continuous integration system; this tends to be more effective for measuring person productivity.
+- **Change Lead Time** - Time to implement, test, and deliver code for a feature (measured from first commit to deployment). Be specific what you mean by start and finish. For example, some teams like to measure from when a developer starts work on a ticket, to when the the devloper pushes the work to a continuous integration process; this approach tends to be more effective for measuring person productivity.
 
 - **Deployment Frequency** - Number of deployments in a given duration of time. Be specific what you mean by deployment and how you're tracking frequency. For example, some teams do a deployment to a fleet of production servers and track the full rollout, whereas other teams do demployment to a single user acceptance test (UAT) server and track when the project manager sends an email announcement to the users to try testing.
 
 - **Change Failure Rate** - Percentage of failed changes over all changes (regardless of success). Be specific what you mean by failure. For example, some teams count a failure when they start on a work ticket then realize the work ticket doesn't have enough information to proceed, so the team rejects the work ticket back to the specification team.
 
-- **Mean Time to Recovery (MTTR)** - Time it takes to restore service after production failure. Be specific what you mean by recovery. For example, some teams count recovery as complete resolution meaning total time from when an incident is detected to when an incident is fully closed; this is better-stated at Mean Time To Resolve.
+- **Mean Time to Recovery (MTTR)** - Time it takes to restore service after production failure. Be specific what you mean by recovery. For example, some teams count recovery as complete resolution meaning total time from when an incident is detected to when an incident is fully closed; this approach is better described as Mean Time To Resolve.
 
 - **Reliability** - A broader, often qualitative, assessment of service consistency. This metric helps show that high velocity does not come at the expense of system capabilty. Be specific what you mean by reliability. Some examples are availability, uptime, latency, accuracy, and service level objectives.
 
